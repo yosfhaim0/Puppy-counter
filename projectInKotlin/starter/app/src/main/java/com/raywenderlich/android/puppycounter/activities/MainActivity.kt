@@ -153,6 +153,8 @@ class MainActivity : AppCompatActivity() {
   private fun showShareScreen() {
     Timber.i("PuppyCounter - MainActivity - start ShareActivity Intent")
     val intent = ShareActivity.createIntent(this)
+    intent.putExtra(ShareActivity.EXTRA_DOG_COUNT, dogCount)
+
     startActivity(intent)
   }
 
