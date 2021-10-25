@@ -64,7 +64,7 @@ class SplashActivity : AppCompatActivity() {
     )
   }
 
-  private fun startFirstActivity() {
-    startActivity(Intent(this, MainActivity::class.java))
-  }
+    private fun startFirstActivity() {
+        startActivity(Intent(this, ActivityWithFragments::class.java))
+    }
 }
